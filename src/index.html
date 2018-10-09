@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <title>Add Title Here</title>
 </head>
 <body>
   <div class="container">
-    <div id="feed" class="status">
-      <h3 id="hungerBar"class="statusBar"></h3>
-      <button id="feedBtn" class="statusButton"type="button" value="small hunger">Feed</button>
+    <div class="bars">
+      <div class="barNames">
+        <div>
+          SLEEP:
+        </div>
+        <div>
+          HUNGER:
+        </div>
+        <div>
+          PLAY:
+        </div>
+      </div>
+      <div class="bar">
+        <div id="sleepBar"class="statusBar"></div>
+        <div id="hungerBar"class="statusBar"></div>
+        <div id="playBar"class="statusBar"></div>
+      </div>
     </div>
-    <div id="play" class="status">
-      <h3 id="playBar"class="statusBar"></h3>
-      <button class="statusButton"type="button" value="small play">Play</button>
-    </div>
-    <div id="sleep"class="status">
-      <h3 id="sleepBar"class="statusBar"></h3>
-      <button class="statusButton"type="button" value="large sleep">Sleep</button>
-    </div>
-    <div id="sleep"class="status">
-      <h3 id="sleepBar"class="statusBar"></h3>
-      <button class="statusButton"type="button" value="downside hunger sleep"> Milkshake</button>
-    </div>
+    <div class="powerUps">
+      <div>
+        <button id="feedBtn" class="statusButton"type="button" value="small hunger"><i class="fas fa-lemon"></i></button>
+      </div>
+      <div>
+        <button class="statusButton"type="button" value="small play"><i class="fas fa-football-ball"></i></button>
+      </div>
+      <div>
+        <button class="statusButton"type="button" value="large sleep"><i class="fas fa-bed"></i></button>
+      </div>
+      <div>
+        <button class="statusButton"type="button" value="downside hunger sleep"><i class="fab fa-playstation"></i></button>
+      </div>
+
+  </div>
 
     <div class="cropTamagotchi">
       <img src="assets/images/tamagotchi.gif" alt="Tamagotchi">

@@ -12,7 +12,6 @@ export let tamagotchi = {
       bartype1.length = 0;
 
       for (var i = 0; i < level; i++) {
-        console.log(bartype1);
         bartype1.push("█");
       }
       if (bartype2){
@@ -32,26 +31,20 @@ export let tamagotchi = {
     };
   },
 
-  // sleep() {
-  //   setInterval(() =>{
-  //     this.hungerArray.push();
-  //   }, 1000);
-  // },
-
   setHunger() {
     setInterval(() =>{
       this.hungerArray.pop();
-    }, 1000);
+    }, 10000);
   },
   setPlay() {
     setInterval(() =>{
       this.playArray.pop();
-    }, 700);
+    }, 7000);
   },
   setSleep() {
     setInterval(() =>{
       this.sleepArray.pop();
-    }, 5000);
+    }, 50000);
   }
 
 };
@@ -61,6 +54,7 @@ export let tamagotchi = {
   // tamagotchi.small = tamagotchi.blockSet(4)
   // tamagotchi.combo = tamagotchi.blockSet(2,2)
   // tamagotchi.wierd = tamagotchi.blockSet(random, random, random)
+  // tamagotchi.full = tamagotchi.blockSet(random, random, random)
 
   // Functions we can call:
   // tamagotchi.full(tamagotchi.hungerArray);
